@@ -1,7 +1,8 @@
+import { CustomAppBar } from "../../components/CustomAppBar/CustomAppBar";
 
 
 export  function Profile() {
   return (
-    <div>Profile</div>
+    <CustomAppBar title='Perfil' />
   )
 }

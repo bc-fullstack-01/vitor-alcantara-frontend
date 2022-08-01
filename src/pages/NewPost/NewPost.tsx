@@ -1,8 +1,8 @@
 import { CustomAppBar } from "../../components/CustomAppBar/CustomAppBar";
 
 
-export  function Profiles() {
+export function NewPost() {
   return (
-    <CustomAppBar title='Perfis' />
+    <CustomAppBar title='Novo Post' />
   )
 }
