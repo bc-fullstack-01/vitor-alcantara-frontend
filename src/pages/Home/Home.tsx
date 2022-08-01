@@ -1,7 +1,8 @@
 import React from 'react'
+import { CustomAppBar } from '../../components/CustomAppBar/CustomAppBar'
 
 export function Home() {
   return (
-    <div>Home</div>
+    <CustomAppBar title='Home' />
   )
 }

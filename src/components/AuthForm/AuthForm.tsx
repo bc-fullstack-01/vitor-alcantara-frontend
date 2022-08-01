@@ -4,6 +4,7 @@ import { Stack, Button, TextField } from "@mui/material";
 import { Container } from "@mui/system";
 
 import logo from "../../assets/logo.svg";
+import './AuthForm.css'
 
 interface FormProps {
     onSubmitForm: (user: string, password: string) => {}; 
