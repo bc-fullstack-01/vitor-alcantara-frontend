@@ -1,7 +1,6 @@
-import { ChatBubbleOutline } from "@mui/icons-material";
-import { IconButton, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import server from "../../api/server";
+import { CustomChatBubbleIcon } from "../CustomChatBubbleIcon/CustomChatBubbleIcon";
 import CustonFavoriteIcon from "../CustomFavoriteIcon/CustonFavoriteIcon";
 
 interface Props {
@@ -55,12 +54,7 @@ export function CustomActionIcons({
 
   return (
     <div>
-      <IconButton>
-        <ChatBubbleOutline fontSize="small" />
-      </IconButton>
-      <Typography variant="caption" color="text.secondary">
-        {commentCount}
-      </Typography>
+      <CustomChatBubbleIcon commentCount={commentCount}/>
       <CustonFavoriteIcon
         handleLike={handleLike}
         likeCount={likesCount}
