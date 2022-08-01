@@ -7,7 +7,7 @@ import {
   CardActions,
 } from "@mui/material";
 import { Post } from "../../models/Post";
-import { CustomActionIcon } from "../CustomActionIcon/CustomActionIcon";
+import { CustomActionIcons } from "../CustomActionIcons/CustomActionIcons";
 import { CustomAvatarName } from "../CustomAvatarName/CustomAvatarName";
 
 interface Props {
@@ -37,10 +37,13 @@ export function PostCard({ post }: Props) {
             justifyContent: "start",
           }}
         >
-            <CustomActionIcon 
+            <CustomActionIcons 
             commentCount={post.comments.length} 
             likeCount={post.likes.length} 
-            likes={post.likes}/>
+            likes={post.likes}
+            postId={post._id}
+            />
+            
         </div>
       </CardActions>
     </Paper>
